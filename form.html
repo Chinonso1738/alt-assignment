@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alt School Application form</title>
+</head>
+<body>
+<section>
+    <fieldset>
+        <legend>
+            <h1><em>Alt Application Form</em></h1>
+        </legend>
+        <p>
+            <label 
+            for="First Name">First name</label>
+            <input 
+            type="text" placeholder="Clinton" autocomplete="enter firstname">
+        </p>
+        <p>
+            <label
+            for="last name">Last Name</label>
+            <input
+            type="text" placeholder="Obidike" autocomplete="enter last name">
+        </p>
+            <p>
+                <label
+                for="Gender">Gender</label>
+               <input 
+                type="text"
+                 name="gender" 
+                id="gender"
+                list="gender-list"
+                placeholder="select-gender"
+                />
+                <datalist id="gender-list">
+                    <option value="male"></option>
+                    <option value="female"></option>
+                </datalist>
+            </p>
+            <p>
+            <label for="email">Email</label>
+                <input type="text"
+                name="Email"
+                id="email"
+                 placeholder="Enter your email"
+                 />
+            </p>
+        <p>
+            <label for="Date of birth">Date of birth</label>
+            <input type="text"
+            placeholder="yyyy-mm-dd"
+            id="birth"
+            autocomplete="on"
+            />
+        </p>
+        <p>
+            <label for="phone">Phone-number</label>
+            <input
+             type="tel"
+             name="Phone-number"
+             placeholder="0806549914"
+             id="phone"
+             pattern="[0-9] {3} [0-9] {3} [0-9]"
+             />
+        </p>
+        <p>
+          <label for="about">How did you hear about us</label>  
+          <input
+          type="text"
+          placeholder="select-channel"
+          list="about-list"
+          />
+          <datalist id="about-list">
+            <option value="from a friend"></option>
+            <option value="Family member"></option>
+            <option value="internet"></option>
+            <option value="Linkedin"></option>
+          </datalist>
+        </p>
+          <p>
+            <label for="country">country</label>
+            <input 
+            type="text"
+            placeholder="select-country"
+            list="country-list"
+            />
+            <datalist id="country-list">
+              <option value="nigeria"></option>
+              <option value="canada"></option>
+              <option value="Ghana"></option>
+          </datalist>
+        </p>
+          <p>
+          <label for="password">password</label>
+          <input 
+          type="text"
+          placeholder="123456"
+          />
+          </p>
+          <p>
+            <label for="confirm password">Confirm password</label>
+            <input type="text"
+            placeholder="1234567"
+            />
+          </p>
+          <p>
+            <label for="state of residence">State of residence</label>
+            <input type="text"
+            placeholder="State"
+            />
+            <datalist id="state of residence">
+            <option value="Abia"></option>
+            <option value="Enugu"></option>
+            <option value="Ebonyi"></option>
+            </p>
+          </fieldset>
+          <button type="Submit">Submit</button>
+          <button
+          type="submit"
+          formaction="https://httpbin.org/post"
+          formmethod="post">Post</button>
+          <button type="Reset">Reset</button>
+</section>
+</body>
+</html>
